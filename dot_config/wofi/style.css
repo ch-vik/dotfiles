@@ -1,0 +1,67 @@
+/* General window settings */
+window {
+  margin: 10px;
+  padding: 10px;
+  background-color: #1a1b26; /* Dark background */
+  color: #c0caf5; /* Text color */
+  font-family: "JetBrains Mono Nerd Font", monospace;
+  font-size: 12px;
+}
+
+/* Input box settings */
+#input {
+  margin: 10px;
+  padding: 10px;
+  background-color: #1a1b26; /* Dark background */
+  color: #c0caf5; /* Text color */
+}
+
+/* Application list settings */
+#list {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+/* Individual application item settings */
+#list > box {
+  padding: 10px;
+  border-radius: 5px; /* Rounded corners */
+  background-color: #1a1b26; /* Match the dark background */
+  color: #c0caf5; /* Text color */
+  transition: background-color 0.3s;
+}
+
+/* Icon settings */
+#list > box image {
+  margin-right: 10px; /* Space between icon and app name */
+  min-width: 32px;
+  min-height: 32px;
+  vertical-align: middle; /* Align icon vertically */
+}
+
+/* Application name settings */
+#list > box span {
+  font-weight: bold;
+}
+
+/* Highlighted (hovered) application item */
+#list > box:hover {
+  background-color: #414868; /* Highlight background */
+}
+
+/* Selected application item */
+#list > box:selected {
+  background-color: #565f89; /* Selected background */
+  color: #c0caf5; /* Selected text color */
+}
+
+/* Scrollbar settings */
+scrollbar {
+  background-color: #1a1b26; /* Dark background */
+}
+
+scrollbar slider {
+  background-color: #9ece6a; /* Green background */
+}
