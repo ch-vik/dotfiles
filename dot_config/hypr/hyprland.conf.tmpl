@@ -15,11 +15,13 @@
 ################
 
 # See https://wiki.hyprland.org/Configuring/Monitors/
-#monitor=,preferred,auto,auto
+{{- if eq .location "WORK"}}
+monitor=,preferred,auto,auto
+{{- else }}
 monitor=DP-1, 2560x1440@240, 0x0, 1
 monitor=DP-2, 1920x1200@75, -1200x-220,1,transform,1
 monitor=HDMI-A-1, 1080x1920@60, 2560x0, 1, transform, 3
-
+{{- end}}
 ###################
 ### MY PROGRAMS ###
 ###################
