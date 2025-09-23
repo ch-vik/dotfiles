@@ -182,7 +182,11 @@ device {
 $mainMod = SUPER # Sets "Windows" key as main modifier
 
 # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
+{{- if eq .location "WORK"}}
+bind = $mainMod SHIFT, P, exec, grim -g "$(slurp -d)" - | wl-copy
+{{- else }}
 bind = , Print, exec, grim -g "$(slurp -d)" - | wl-copy
+{{- end}}
 bind = $mainMod, X, exec, $HOME/.config/rofi/powermenu/type-5/powermenu.sh 
 bind = $mainMod, W, exec, firefox
 bind = $mainMod, return, exec, $terminal
