@@ -188,7 +188,7 @@ bind = $mainMod SHIFT, P, exec, grim -g "$(slurp -d)" - | wl-copy
 bind = , Print, exec, grim -g "$(slurp -d)" - | wl-copy
 {{- end}}
 bind = $mainMod, X, exec, $HOME/.config/rofi/powermenu/type-5/powermenu.sh 
-bind = $mainMod, W, exec, firefox
+bind = $mainMod, W, exec, opera --enable-features=UseOzonePlatform --ozone-platform=wayland
 bind = $mainMod, return, exec, $terminal
 bind = $mainMod, Q, killactive,
 bind = $mainMod SHIFT, Q, exit,
